@@ -1,16 +1,16 @@
 const Discord = require("discord.js");
 const ytdl = require("ytdl-core");
-const readablestream = require("readable-stream");
 
 //const music = require ('discord.js-music-v11');
 
 
 module.exports.run = async(message, args) => {
-    const voiceChannel = message.member.voiceChannel;
+    console.log(message)
+        // let voiceChannel = message.member.voiceChannel;
 
-    //if(!voiceChannel) return message.channel.send("Tu n'as pas de channel audio !");
-    //if(!hasPermission("CONNECT") || !hasPermission("SPEAK")) return message.channel.send("je peux pas accéder au channel audio... Donne moi la permission stp!");
-    //if(message.guild.message.me.voiceChannel) return message.channel.send("Je suis déja connecté à un autre salon audio ! :/");
+    // if (!voiceChannel) return message.channel.send("Tu n'as pas de channel audio !");
+    //if (!hasPermission("CONNECT") || !hasPermission("SPEAK")) return message.channel.send("je peux pas accéder au channel audio... Donne moi la permission stp!");
+    //if (message.guild.message.me.voiceChannel) return message.channel.send("Je suis déja connecté à un autre salon audio ! :/");
 
     if (!args[0]) return message.channel.send("Précise un lien YT :)");
 
